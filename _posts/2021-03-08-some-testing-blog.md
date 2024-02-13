@@ -17,8 +17,8 @@ def main():
     print("Hello, blog!")
 ```
 <script src="https://utteranc.es/client.js"
-        repo="nefomichev.github.io"
-        issue-term="pathname"
+        repo="nefomichev/nefomichev.github.io"
+        issue-term="title"
         theme="github-light"
         crossorigin="anonymous"
         async>

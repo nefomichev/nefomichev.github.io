@@ -7,6 +7,12 @@ github_username: "nefomichev"
 linkedin_username: "nefomichev"
 theme: "minima"
 
+markdown: kramdown
+kramdown:
+  input: GFM
+  parse_block_html: true
+highlighter: rouge
+
 rss: rss
 
 plugins:
