@@ -16,10 +16,3 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 def main():
     print("Hello, blog!")
 ```
-<script src="https://utteranc.es/client.js"
-        repo="nefomichev/nefomichev.github.io"
-        issue-term="title"
-        theme="github-light"
-        crossorigin="anonymous"
-        async>
-</script>

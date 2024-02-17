@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
+{%- include reading_time.html content=page.content -%}
 <link href="/css/override.css" rel="stylesheet" type="text/css">
+
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
@@ -11,10 +13,14 @@ layout: default
         {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
+
       {% assign author = page.author | default: site.author %}
       {%- if author -%}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-      {%- endif -%}</p>
+      {%- endif -%} &verbar; 
+      {{ reading_time }} ({{ total_words }})
+    </p>
+
   </header>
 
   <div class="share-links">
@@ -27,4 +33,13 @@ layout: default
   </div>
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+
+  <script src="https://utteranc.es/client.js"
+        repo="ljvmiranda921/comments.ljvmiranda921.github.io"
+        issue-term="title"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+  </script>
+
 </article>
