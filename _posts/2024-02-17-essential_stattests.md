@@ -38,8 +38,8 @@ Or something like this:
 
 
 <details>
-<summary>click here to view diagram 2 </summary>
-<img src="/assets/pictures/diagram_2.webp" alt="diagram_2" width="600" height="auto">
+<summary>click here to view diagram 2</summary>
+<img src="/assets/pictures/diagram_2.webp" alt="diagram_2" width="600">
 </details>
 
 
