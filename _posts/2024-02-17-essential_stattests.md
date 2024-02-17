@@ -40,7 +40,9 @@ Or something like this:
 
 
 <details>
-<summary>click here to view diagram 2</summary>
+<summary markdown="span">
+click here to view diagram 2
+</summary>
 <img src="/assets/pictures/diagram_2.webp" alt="diagram_2" width="600">
 </details>
 
@@ -50,7 +52,9 @@ I was not sure how to deal with them, but thanks to Linus, the internet got this
 
 
 <details>
-<summary>:-)) </summary>
+<summary markdown="span">
+:-)) 
+</summary>
 <img src="/assets/pictures/linus_meme.jpg" alt="linus_meme" width="600" height="auto">
 </details>
 
@@ -137,7 +141,9 @@ Increasing the expected number of orders for a population increases the overall 
 Changes in median, percentiles, or general sample distribution could not guarantee same changes in total. Significant results from criteria that use these statistics could mislead and make us rolling out treatments without overall positive effects. It's particularly hazardous for stakeholders who are distanced from the mathematical details and view significance as the criterion for an experiment's success.
 
 <details>
-<summary>Detailed examples </summary>
+<summary markdown="span">
+Detailed examples
+</summary>
 Examples that demonstrate how changes in the median, percentiles, or even the overall distribution of a dataset might not affect the overall sum of the data. Note: each number is a point from an imaginary population:
 
 **Example 1: Median**
@@ -256,7 +262,9 @@ Even though tests compute the same statistics, they use different null hypothesi
 The Z-test null hypothesis is validated against a Standard Normal distribution, and the T-test uses Student's distribution. What's the difference? Here is the main plot twist:
 
 <details>
-<summary>Student VS Normal visualization</summary>
+<summary markdown="span">
+Student VS Normal visualization
+</summary>
 <img src="/assets/pictures/T_Density.png" alt="Student VS Normal" width="600">
 </details>
 
