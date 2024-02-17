@@ -29,7 +29,7 @@ The article aims to provide a practitioner's view on common statistical tests. M
 Actually, the idea for this article came to me after repeatedly seeing the following diagrams in the LinkedIn Feed:
 
 <details>
-<summary>
+<summary markdown="span">
 click here to view diagram 1
 </summary>
 <img src="/assets/pictures/diagram_1.jpg" alt="diagram_1" width="600" height="auto">
