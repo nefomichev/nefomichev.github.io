@@ -280,7 +280,9 @@ $$
 The precision of the sample variance ($s^2$) as an estimator for the true variance ($\sigma^2$) improves with increasing sample size due to the law of large numbers. This increased precision is reflected in the decreased standard error of the sample variance.
 
 <details>
-<summary>More formal explanation</summary>
+<summary markdown="span">
+More formal explanation
+</summary>
 
 Let $T_n$ be a Student's distribution with $n$ degrees of freedom. Then by definition:
 
