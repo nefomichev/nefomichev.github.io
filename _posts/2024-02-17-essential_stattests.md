@@ -30,7 +30,7 @@ Actually, the idea for this article came to me after repeatedly seeing the follo
 
 <details>
 <summary>click here to view diagram 1 </summary>
-<img src="../assets/pictures/diagram_1.jpg" alt="diagram_1" width="600" height="auto">
+<img src="/assets/pictures/diagram_1.jpg" alt="diagram_1" width="600" height="auto">
 </details>
 
 
@@ -39,7 +39,7 @@ Or something like this:
 
 <details>
 <summary>click here to view diagram 2 </summary>
-<img src="../assets/pictures/diagram_2.webp" alt="diagram_2" width="600" height="auto">
+<img src="/assets/pictures/diagram_2.webp" alt="diagram_2" width="600" height="auto">
 </details>
 
 
@@ -49,7 +49,7 @@ I was not sure how to deal with them, but thanks to Linus, the internet got this
 
 <details>
 <summary>:-)) </summary>
-<img src="../assets/pictures/linus_meme.jpg" alt="linus_meme" width="600" height="auto">
+<img src="/assets/pictures/linus_meme.jpg" alt="linus_meme" width="600" height="auto">
 </details>
 
 
@@ -255,7 +255,7 @@ The Z-test null hypothesis is validated against a Standard Normal distribution, 
 
 <details>
 <summary>Student VS Normal visualization</summary>
-<img src="../assets/pictures/T_Density.png" alt="Student VS Normal" width="600">
+<img src="/assets/pictures/T_Density.png" alt="Student VS Normal" width="600">
 </details>
 
 
