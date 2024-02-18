@@ -1,1 +1,1 @@
-Hey there! I'm a seasoned data wizard working in experimentation field. That's my small realm to share some reflections on the topics I like. I plan to write about hypothesis testing, experimentation platforms and other DS's funk. Sometimes things do not go as planned >.<
+Hey there! I'm a seasoned data wizard working in experimentation field. That's my small realm to share some reflections on the topics I like. I plan to write about hypothesis testing, experimentation platforms and other DS's funk. 
