@@ -10,6 +10,7 @@
   - [Who Are You, Mr. T-test?](#who-are-you-mr-t-test)
     - [T-test vs Z-test](#t-test-vs-z-test)
     - [T-test options](#t-test-options)
+    - [T-test Applicability](#t-test-applicability)
   - [Beyond T-test](#beyond-t-test)
     - [Main insight](#main-insight)
     - [Bootstrapping](#bootstrapping)
@@ -423,6 +424,13 @@ Dmitriy Lunin, [Article about paired test design and other methods to reduce var
 As the brief intro: Dima suggests performing user sorting by some important metric before the split. The sorted array is split sequentially: 1st in control, 2nd in test, 3rd in control... It might not be obvious from the first glance, but it creates a paired dependency that can later be used with the paired criteria to reduce the variance. The beauty of the paired test is that it also works with regular samples; we do not lose anything except the need to have a paired sample size (but this can be done by bucketing, I can write about this method later).
 
 Anyway, please read Dima's article; it's just a beautiful piece of analytical research.
+
+### T-test Applicability
+
+TODO(nikita): explain why T-test is more robust than we think:
+
+- Why it works with not-normal data
+- How to work treat data with outliers
 
 ## Beyond T-test
 
