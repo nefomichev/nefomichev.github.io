@@ -334,8 +334,7 @@ Here, let's be short. Pooled variance T-test assumes the samples we compare have
 Original:
 
 
-$$T = \frac{\bar{x}_1 - \bar{x}_2}{s_p \cdot \sqrt{\frac{1}{n_1} + \frac{1}{n_2}}}$$
-
+$$T = \frac{\bar{x}_1 - \bar{x}_2}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}$$
 
 
 Pooled:
