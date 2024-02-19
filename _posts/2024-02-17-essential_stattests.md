@@ -138,11 +138,61 @@ $$E[X] = \sum_{i=1}^{n} x_i p_i$$
 
 Increasing the expected number of orders for a population increases the overall metric. So, when we run the classic AB experiment with control and test variants randomized, we sample homogeneous groups from the same population. Increasing/decreasing the sample mean by AB impact is the direct approximation of the changes in the expected value of that population. Since the population is fixed during the AB experiment, the change of the expected value is the direct sign of change on the total sum of the metric, in our simplified case - the number of orders created.
 
+<details>
+<summary markdown="span">
+Visual examples
+</summary>
+
+What business is usually looking for after an AB experiment:
+
+<img src="/assets/pictures/business_ab_expectations.png" alt="business_expectations" width="600">
+
+Yes, distributions can matter, but totals would usually be the final metric to measure impact on the product and business:
+
+
+<img src="/assets/pictures/mean_difference_total_appoximations.png" alt="mean_approximate_totals" width="600">
+
+
+**Why do we use mean to approximate impact on the totals?**
+
+Sample Mean $\bar{x}$: is average value of all units in a sample. It's calculated by summing up observations and dividing by the number of statistical units. For units $x_1, x_2, ..., x_n$ in a sample, the sample mean $\bar{x}$ is given by:
+
+  $$\bar{x} = \frac{\sum_{i=1}^{n} x_i}{n}$$
+
+  $$T = \sum_{i=1}^{n} x_i$$
+
+The total of a sample can be expressed in terms of its mean by rearranging the formula for the mean:
+
+$$\bar{x} = \frac{T}{n}$$
+$$T = \bar{x} \cdot n$$
+
+**This simple equation stands on the fact that we could not change the sample size ($n$) and it stays fixed in our experiment**. 
+
+Yes, test and control groups has some variability due to the random sampling process, but it converges to 0. Hence, business can read mean changes as the overall changes for the tested population. 
+
+*Disclaimer: be carefull with ratio metrics. When you launch customer based experiment (sampling happens on the customer level). Your sample mean should be aggregated by this statistical unit. If in this setup you have metrics like revenue per order, events per session ..., both numerator and denominator will be distinct random variables with their own means. Revenue per order could not be treated like a sample mean and follow the logic we described above.*
+
+</details>
+
+**Other statistics**
+
 Changes in median, percentiles, or general sample distribution could not guarantee same changes in total. Significant results from criteria that use these statistics could mislead and make us rolling out treatments without overall positive effects. It's particularly hazardous for stakeholders who are distanced from the mathematical details and view significance as the criterion for an experiment's success.
 
 <details>
 <summary markdown="span">
-Detailed examples
+Visual examples (2)
+</summary>
+
+Here is a toy example on how your treatment can heavily impact the distribution, but the overall business values measured in means stay the same. 
+<img src="/assets/pictures/appro_same_means_different_distribution.png" alt="mean_approximate_totals" width="600">
+</details>
+
+Here is also some synthetic examples just to underline how different statistics can mislead from the overall changes:
+
+
+<details>
+<summary markdown="span">
+Synthetic examples
 </summary>
 Examples that demonstrate how changes in the median, percentiles, or even the overall distribution of a dataset might not affect the overall sum of the data. Note: each number is a point from an imaginary population:
 
@@ -179,8 +229,7 @@ On the other hand, the mean is calculated by summing all values in a dataset and
 </details>
 
 
-Homogeneity criteria are specifically dangerous for interpretation, while percentile changes can be useful to track in some specific contexts.
-
+**Again, this argumentation comes from the assumption that in most practical cases we are looking for the overall changes.** Others statistics just measure different things and my main point is that we should be very carefull with choosing a hypothesis and how it's aligned with business / analytical expectations. Homogeneity criteria are specifically dangerous for interpretation, while percentile changes can be useful to track in some specific contexts. 
 
 ### Other Practical Options (Exceptions?)
 
@@ -374,7 +423,6 @@ Dmitriy Lunin, [Article about paired test design and other methods to reduce var
 As the brief intro: Dima suggests performing user sorting by some important metric before the split. The sorted array is split sequentially: 1st in control, 2nd in test, 3rd in control... It might not be obvious from the first glance, but it creates a paired dependency that can later be used with the paired criteria to reduce the variance. The beauty of the paired test is that it also works with regular samples; we do not lose anything except the need to have a paired sample size (but this can be done by bucketing, I can write about this method later).
 
 Anyway, please read Dima's article; it's just a beautiful piece of analytical research.
-
 
 ## Beyond T-test
 
