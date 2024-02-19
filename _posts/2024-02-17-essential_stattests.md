@@ -429,8 +429,11 @@ Anyway, please read Dima's article; it's just a beautiful piece of analytical re
 
 TODO(nikita): explain why T-test is more robust than we think:
 
-- Why it works with not-normal data
-- How to work treat data with outliers
+- T-test works with not-normal data
+- Outliers can be an issue, but using filtering or segmentation with t-test are way better options than changing the hypothesis
+
+Anyway, I will explain both points in the separate article.   
+
 
 ## Beyond T-test
 
